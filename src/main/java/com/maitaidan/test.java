@@ -1,5 +1,6 @@
 package com.maitaidan;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -8,8 +9,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
  */
 public class test {
     public static void main(String[] args) {
-        RemoteWebDriver remoteWebDriver = new ChromeDriver();
-        remoteWebDriver.get("www.baidu.com");
-
+        System.setProperty("webdriver.chrome.driver", "res/chromedriver.exe");
+        WebDriver webDriver = new ChromeDriver();
+        webDriver.get("http://www.baidu.com");
     }
 }
