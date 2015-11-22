@@ -12,5 +12,6 @@ public class test {
         System.setProperty("webdriver.chrome.driver", "res/chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("http://www.baidu.com");
+
     }
 }
